@@ -10,16 +10,25 @@ class Animal {
 }
 
 class Dog extends Animal {
+    bark(){
+		console.log("woof");
+	}
+	
+}
+
+class Cat extends Animal {
 	purr(){
 		console.log("purr");
 	}
 }
 
-class Cat extends Animal {
-	bark(){
-		console.log("woof");
-	}
-}
+// const myCat = new Cat("Siamese");
+// myCat.makeSound(); 
+// myCat.purr(); 
+
+// const myDog = new Dog("Golden Retriever");
+// myDog.makeSound();
+// myDog.bark(); 
 
 // Do not change the code below this line
 window.Animal = Animal;
